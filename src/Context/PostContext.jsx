@@ -17,7 +17,7 @@ export default function PostContextProvider({ children }){
 
 async function getAllPosts(){
     try {
-        let {data} = await axios.get("https://linked-posts.routemisr.com/posts?limit=50", {
+        let {data} = await axios.get("https://linked-posts.routemisr.com/posts?limit=30", {
             headers,
             params:{
                 sort : "-createdAt",
@@ -26,13 +26,13 @@ async function getAllPosts(){
         });
         console.log(data)
         
-        // return data.posts
-        return data.posts || [];
+        // return data.posts//
+        return data || {};
         
     } 
     catch (error) {
 console.log("Error fetching posts:", error);
-    return [];        
+    return {};        
     }
 }
 

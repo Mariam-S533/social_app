@@ -43,7 +43,7 @@ function Sinup() {
   return (
     <>
         <div className='w-1/2  shadow mx-auto my-5 p-4'>
-          <h1 className='text-center text-blue-800 text-2xl font-bold my-4'>Register Now</h1>
+          <h1 className='text-center text-[#640D5F] text-2xl font-bold my-4'>Register Now</h1>
 
         <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -92,7 +92,7 @@ function Sinup() {
 
             <button 
             disabled= {isSubmitting}
-            type='submit' className='px-3 py-2 bg-blue-800 text-white rounded-sm my-3 cursor-pointer'>
+            type='submit' className='px-3 py-2 bg-[#640D5F] text-white rounded-sm my-3 cursor-pointer'>
                { isSubmitting ? "Loding..." : "sign Up"}
             </button>
         </form>

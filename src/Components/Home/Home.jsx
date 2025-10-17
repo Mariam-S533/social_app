@@ -8,15 +8,19 @@ function Home() {
           const [allPosts, setAllPosts] = useState([])
           const [lodding, setLodding] = useState(true)
           let {getAllPosts} = useContext(PostContext);
+         
 
-          async function fetchPosts() {
-            let data = await getAllPosts()
-            setAllPosts(data)
+          async function fetchPosts(){ {
+            let {posts} = await getAllPosts()
+            setAllPosts(posts)
             setLodding(false)
-          }
+          }}
+
+
           useEffect(() => {
             fetchPosts()
           }, []);
+
     
   return  <>
         
@@ -34,6 +38,7 @@ function Home() {
             </div>
               </>
             }
+
           </div>
         </div>
 

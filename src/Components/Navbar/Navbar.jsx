@@ -77,7 +77,6 @@ const {currentUser} = useContext(PostContext)
          {token &&
           <>
             <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/userposts">User Posts</NavLink></li>
           </>
           }
           
