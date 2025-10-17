@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@layer theme, base, components, utilities;
+
+@theme{
+    --font-poppins: Poppins, sans-serif;
+    --color-tomato: tomato;
+}
+
+@utility tab-new{
+
+    tab-size:20px;
+
+}
+
+@layer components{
+    .btn{
+    @apply bg-amber-700 m-2 text-amber-200 p-2 rounded-md cursor-pointer hover:bg-red-400
+   }
+}
+.row{
+    @apply flex flex-wrap justify-between;
+}
+
+.active{
+    color: #FF0066 !important;
+    font-weight: 700 !important;
+}
