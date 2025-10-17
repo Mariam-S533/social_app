@@ -48,7 +48,7 @@ function Login() {
   return (
     <>
           <div className='w-1/2  shadow mx-auto my-5 p-4'>
-          <h1 className='text-center bg-[#640D5F] text-2xl font-bold my-4'>Login</h1>
+          <h1 className='text-center text-[#640D5F] text-2xl font-bold my-4'>Login</h1>
 
         <form onSubmit={handleSubmit(onSubmit)}>
 
